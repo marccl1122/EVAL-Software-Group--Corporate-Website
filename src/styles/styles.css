@@ -1,0 +1,212 @@
+/* General Styles */
+
+body {
+	font-family: Fira Code, monospace; /* Use Fira Code font */
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7; /* Light gray background */
+	color: #333; /* Dark text color */
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #007bff; /* Blue hover color */
+}
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+/* Header Styles */
+
+.hero {
+	background-image: url("hero-background.jpg"); /* Replace with background image */
+	background-size: cover;
+	background-position: center;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	text-align: center;
+}
+
+.hero img.logo {
+	width: 150px;
+	margin-bottom: 1em;
+}
+
+.hero h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+.hero p {
+	font-size: 1.2em;
+	color: #100f0f; /* White text color for hero */
+}
+
+/* Navigation Styles */
+
+nav {
+	background-color: #333; /* Dark gray navigation bar */
+	color: #fff; /* White text color for navigation */
+	padding: 1em;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	display: inline-block;
+}
+
+/* Main Content Styles */
+
+main.container {
+	display: flex;
+	flex-wrap: wrap; /* Wrap cards on smaller screens */
+	justify-content: space-around; /* Space cards evenly */
+	padding: 2em;
+}
+
+/* Card Styles */
+
+.card {
+	background-color: #fff; /* White card background */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+	border-radius: 5px;
+	padding: 2em;
+	margin: 1em;
+	width: 30%; /* Adjust width as needed */
+	text-align: center; /* Center text within cards */
+	transition: transform 0.2s ease-in-out; /* Add hover animation */
+}
+
+.card:hover {
+	transform: scale(1.02); /* Slight scale-up on hover */
+}
+
+.card h2 {
+	margin-bottom: 1em;
+}
+
+.card p {
+	line-height: 1.8; /* Slightly larger line-height for cards */
+}
+
+/* Project Styles (within Portfolio Card) */
+
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.project img {
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 1em;
+	border-radius: 5px;
+}
+
+.project h3 {
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+}
+
+/* Contact Styles */
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%; /* Full-width form */
+}
+
+#contact label {
+	font-size: 1.2em;
+}
+/* Contact Styles (continued) */
+
+#contact label {
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#contact input,
+#contact textarea {
+	width: 100%;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+#contact input[type="submit"] {
+	background-color: #007bff; /* Blue button color */
+	color: #fff;
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+#contact input[type="submit"]:hover {
+	background-color: #0069d9; /* Darker blue hover color */
+}
+
+/* Navigation Hover Animation */
+
+nav a {
+	transition: transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+	transform: scale(1.1); /* Slight scale-up on hover */
+}
+
+/* Additional Services */
+
+.services ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1em; /* Add spacing between list items */
+}
+
+.services ul li {
+	cursor: pointer; /* Indicate interactivity */
+}
+
+.services ul li:hover {
+	color: #007bff; /* Blue hover color for services */
+	text-decoration: underline; /* Underline on hover */
+}
