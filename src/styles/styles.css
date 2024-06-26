@@ -1,212 +1,209 @@
 /* General Styles */
-
 body {
-	font-family: Fira Code, monospace; /* Use Fira Code font */
-	margin: 0;
-	padding: 0;
-	background-color: #f7f7f7; /* Light gray background */
-	color: #333; /* Dark text color */
+    font-family: 'Fira Code', monospace;
+    background-color: #1d1f21;
+    color: #c5c8c6;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-	color: #333;
-	text-decoration: none;
-	transition: color 0.2s ease-in-out;
+    color: #007bff;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #007bff; /* Blue hover color */
+    text-decoration: underline;
 }
 
-h1,
-h2,
+h1, h2, h3 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 h3 {
-	font-weight: normal;
-	margin-bottom: 1em;
+    font-size: 1.5rem;
 }
 
 p {
-	line-height: 1.5;
-	margin-bottom: 1em;
+    margin: 0;
+    padding: 0;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-li {
-	margin-bottom: 0.5em;
+code {
+    display: block;
+    background-color: #272822;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Header Styles */
-
 .hero {
-	background-image: url("hero-background.jpg"); /* Replace with background image */
-	background-size: cover;
-	background-position: center;
-	min-height: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2em;
-	text-align: center;
+    background-color: #272822;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero img.logo {
-	width: 150px;
-	margin-bottom: 1em;
+.hero.logo {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
-.hero h1 {
-	font-size: 2em;
-	margin-bottom: 0.5em;
+.hero.coding-gif {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 40%;
+    height: auto;
+    animation: coding 10s linear infinite;
 }
 
-.hero p {
-	font-size: 1.2em;
-	color: #100f0f; /* White text color for hero */
+@keyframes coding {
+    0% {
+        right: -10%;
+    }
+    100% {
+        right: 110%;
+    }
 }
 
 /* Navigation Styles */
-
 nav {
-	background-color: #333; /* Dark gray navigation bar */
-	color: #fff; /* White text color for navigation */
-	padding: 1em;
+    background-color: #272822;
+    padding: 1rem;
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav li {
-	display: inline-block;
+    margin-right: 2rem;
 }
-
-/* Main Content Styles */
-
-main.container {
-	display: flex;
-	flex-wrap: wrap; /* Wrap cards on smaller screens */
-	justify-content: space-around; /* Space cards evenly */
-	padding: 2em;
-}
-
-/* Card Styles */
-
-.card {
-	background-color: #fff; /* White card background */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-	border-radius: 5px;
-	padding: 2em;
-	margin: 1em;
-	width: 30%; /* Adjust width as needed */
-	text-align: center; /* Center text within cards */
-	transition: transform 0.2s ease-in-out; /* Add hover animation */
-}
-
-.card:hover {
-	transform: scale(1.02); /* Slight scale-up on hover */
-}
-
-.card h2 {
-	margin-bottom: 1em;
-}
-
-.card p {
-	line-height: 1.8; /* Slightly larger line-height for cards */
-}
-
-/* Project Styles (within Portfolio Card) */
-
-.project {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 1em;
-}
-
-.project img {
-	width: 100%;
-	max-width: 300px;
-	margin-bottom: 1em;
-	border-radius: 5px;
-}
-
-.project h3 {
-	font-size: 1.1em;
-	margin-bottom: 0.5em;
-}
-
-/* Contact Styles */
-
-#contact form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%; /* Full-width form */
-}
-
-#contact label {
-	font-size: 1.2em;
-}
-/* Contact Styles (continued) */
-
-#contact label {
-	font-size: 1.2em;
-	margin-bottom: 0.5em;
-}
-
-#contact input,
-#contact textarea {
-	width: 100%;
-	padding: 0.8em;
-	margin-bottom: 1em;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-
-#contact input[type="submit"] {
-	background-color: #007bff; /* Blue button color */
-	color: #fff;
-	padding: 0.8em 1.5em;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: background-color 0.2s ease-in-out;
-}
-
-#contact input[type="submit"]:hover {
-	background-color: #0069d9; /* Darker blue hover color */
-}
-
-/* Navigation Hover Animation */
 
 nav a {
-	transition: transform 0.2s ease-in-out;
+    color: #c5c8c6;
+    text-decoration: none;
 }
 
 nav a:hover {
-	transform: scale(1.1); /* Slight scale-up on hover */
+    color: #007bff;
 }
 
-/* Additional Services */
-
-.services ul {
-	display: flex;
-	flex-direction: column;
-	gap: 1em; /* Add spacing between list items */
+/* Main Styles */
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.services ul li {
-	cursor: pointer; /* Indicate interactivity */
+.card {
+    background-color: #272822;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.services ul li:hover {
-	color: #007bff; /* Blue hover color for services */
-	text-decoration: underline; /* Underline on hover */
+.card h2 {
+    margin-top: 0;
+}
+
+.services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services li {
+    margin-bottom: 2rem;
+}
+
+.services i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #007bff;
+}
+
+/* Contact Styles */
+.contact {
+    background-color: #272822;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact label {
+    margin-bottom: 1rem;
+}
+
+.contact input,.contact textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.contact input[type="submit"] {
+    background-color: #007bff;
+    color: #c5c8c6;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .hero.coding-gif {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+   .hero.coding-gif {
+        width: 80%;
+    }
+   .nav ul {
+        flex-direction: column;
+    }
+   .nav li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 }
