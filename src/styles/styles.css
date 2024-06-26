@@ -1,209 +1,338 @@
 /* General Styles */
+
+/* Set the font family to Fira Code, a monospace font */
 body {
     font-family: 'Fira Code', monospace;
+    /* Set the background color to a dark gray */
     background-color: #1d1f21;
+    /* Set the text color to a light gray */
     color: #c5c8c6;
+    /* Set the line height to 1.6 */
     line-height: 1.6;
+    /* Remove margin and padding from the body element */
     margin: 0;
     padding: 0;
 }
 
+/* Style links */
 a {
+    /* Set the link color to a bright blue */
     color: #007bff;
+    /* Remove underline from links */
     text-decoration: none;
 }
 
+/* Style links on hover */
 a:hover {
+    /* Add underline to links on hover */
     text-decoration: underline;
 }
 
+/* Style headings (h1, h2, h3) */
 h1, h2, h3 {
+    /* Set font weight to normal */
     font-weight: normal;
+    /* Remove margin and padding from headings */
     margin: 0;
     padding: 0;
 }
 
+/* Style h1 headings */
 h1 {
+    /* Set font size to 3rem */
     font-size: 3rem;
 }
 
+/* Style h2 headings */
 h2 {
+    /* Set font size to 2rem */
     font-size: 2rem;
 }
 
+/* Style h3 headings */
 h3 {
+    /* Set font size to 1.5rem */
     font-size: 1.5rem;
 }
 
+/* Style paragraphs */
 p {
+    /* Remove margin and padding from paragraphs */
     margin: 0;
     padding: 0;
 }
 
+/* Style code blocks */
 code {
+    /* Display code blocks as blocks */
     display: block;
+    /* Set background color to a dark gray */
     background-color: #272822;
+    /* Add padding to code blocks */
     padding: 1rem;
+    /* Add border radius to code blocks */
     border-radius: 5px;
+    /* Add margin to code blocks */
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 /* Header Styles */
+
+/* Style the hero section */
 .hero {
+    /* Set background color to a dark gray */
     background-color: #272822;
+    /* Add padding to the hero section */
     padding: 2rem;
+    /* Set position to relative to allow for absolute positioning of the coding GIF */
     position: relative;
+    /* Hide overflow to prevent the coding GIF from overflowing the hero section */
     overflow: hidden;
 }
 
+/* Style the logo */
 .hero.logo {
+    /* Set width to 10rem */
     width: 10rem;
+    /* Set height to auto */
     height: auto;
+    /* Add margin bottom to the logo */
     margin-bottom: 1rem;
 }
 
+/* Style the coding GIF */
 .hero.coding-gif {
+    /* Set position to absolute to position the GIF at the bottom right of the hero section */
     position: absolute;
+    /* Set bottom to -10% to position the GIF at the bottom of the hero section */
     bottom: -10%;
+    /* Set right to -10% to position the GIF at the right of the hero section */
     right: -10%;
+    /* Set width to 40% */
     width: 40%;
+    /* Set height to auto */
     height: auto;
+    /* Add animation to the GIF */
     animation: coding 10s linear infinite;
 }
 
+/* Define the animation for the coding GIF */
 @keyframes coding {
+    /* Set the starting position of the GIF to -10% from the right */
     0% {
         right: -10%;
     }
+    /* Set the ending position of the GIF to 110% from the right */
     100% {
         right: 110%;
     }
 }
 
 /* Navigation Styles */
+
+/* Style the navigation menu */
 nav {
+    /* Set background color to a dark gray */
     background-color: #272822;
+    /* Add padding to the navigation menu */
     padding: 1rem;
 }
 
+/* Style the navigation list */
 nav ul {
+    /* Remove list style */
     list-style: none;
+    /* Remove margin and padding from the list */
     margin: 0;
     padding: 0;
+    /* Set display to flex to layout the list items horizontally */
     display: flex;
+    /* Set justify content to space between to space the list items evenly */
     justify-content: space-between;
 }
 
+/* Style the navigation list items */
 nav li {
+    /* Add margin right to the list items */
     margin-right: 2rem;
 }
 
+/* Style the navigation links */
 nav a {
+    /* Set color to a light gray */
     color: #c5c8c6;
+    /* Remove underline from links */
     text-decoration: none;
 }
 
+/* Style the navigationlinks on hover */
 nav a:hover {
+    /* Set color to a bright blue */
     color: #007bff;
 }
 
 /* Main Styles */
+
+/* Style the container element */
 .container {
+    /* Set max width to 80rem */
     max-width: 80rem;
+    /* Set margin to 0 auto to center the container */
     margin: 0 auto;
+    /* Add padding to the container */
     padding: 2rem;
 }
 
+/* Style the card elements */
 .card {
+    /* Set background color to a dark gray */
     background-color: #272822;
+    /* Add padding to the card elements */
     padding: 2rem;
+    /* Add margin bottom to the card elements */
     margin-bottom: 2rem;
+    /* Add border radius to the card elements */
     border-radius: 5px;
+    /* Add box shadow to the card elements */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the card headings */
 .card h2 {
+    /* Remove margin top from the headings */
     margin-top: 0;
 }
 
+/* Style the services list */
 .services {
+    /* Remove list style */
     list-style: none;
+    /* Remove margin and padding from the list */
     margin: 0;
     padding: 0;
 }
 
+/* Style the services list items */
 .services li {
+    /* Add margin bottom to the list items */
     margin-bottom: 2rem;
 }
 
+/* Style the services icons */
 .services i {
+    /* Set font size to 2rem */
     font-size: 2rem;
+    /* Add margin right to the icons */
     margin-right: 1rem;
+    /* Set color to a bright blue */
     color: #007bff;
 }
 
 /* Contact Styles */
+
+/* Style the contact section */
 .contact {
+    /* Set background color to a dark gray */
     background-color: #272822;
+    /* Add padding to the contact section */
     padding: 2rem;
+    /* Add margin bottom to the contact section */
     margin-bottom: 2rem;
+    /* Add border radius to the contact section */
     border-radius: 5px;
+    /* Add box shadow to the contact section */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the contact headings */
 .contact h2 {
+    /* Remove margin top from the headings */
     margin-top: 0;
 }
 
+/* Style the contact form */
 .contact form {
+    /* Set display to flex to layout the form elements vertically */
     display: flex;
+    /* Set flex direction to column to layout the form elements vertically */
     flex-direction: column;
+    /* Set align items to center to center the form elements */
     align-items: center;
+    /* Add padding to the form */
     padding: 2rem;
 }
 
+/* Style the contact labels */
 .contact label {
+    /* Add margin bottom to the labels */
     margin-bottom: 1rem;
 }
 
+/* Style the contact input fields */
 .contact input,.contact textarea {
+    /* Add padding to the input fields */
     padding: 1rem;
+    /* Remove border from the input fields */
     border: none;
+    /* Add border radius to the input fields */
     border-radius: 5px;
+    /* Add margin bottom to the input fields */
     margin-bottom: 2rem;
+    /* Set width to 100% */
     width: 100%;
 }
 
+/* Style the contact submit button */
 .contact input[type="submit"] {
+    /* Set background color to a bright blue */
     background-color: #007bff;
+    /* Set color to a light gray */
     color: #c5c8c6;
+    /* Add padding to the submit button */
     padding: 1rem 2rem;
+    /* Remove border from the submit button */
     border: none;
+    /* Add border radius to the submit button */
     border-radius: 5px;
+    /* Set cursor to pointer to indicate that the button is clickable */
     cursor: pointer;
 }
 
+/* Style the contact submit button on hover */
 .contact input[type="submit"]:hover {
+    /* Set background color to a darker blue */
     background-color: #0069d9;
 }
 
 /* Responsive Styles */
+
+/* Media query for screens with a max width of 768px */
 @media (max-width: 768px) {
+    /* Style the coding GIF for smaller screens */
    .hero.coding-gif {
+        /* Set width to 60% */
         width: 60%;
     }
 }
 
+/* Media query for screens with a max width of 480px */
 @media (max-width: 480px) {
+    /* Style the coding GIF for smaller screens */
    .hero.coding-gif {
+        /* Set width to 80% */
         width: 80%;
     }
+    /* Style the navigation menu for smaller screens */
    .nav ul {
+        /* Set flex direction to column to layoutthe list items vertically */
         flex-direction: column;
     }
-   .nav li {
+    /* Style the navigation list items for smaller screens */
+  .nav li {
+        /* Remove margin right from the list items */
         margin-right: 0;
+        /* Add margin bottom to the list items */
         margin-bottom: 1rem;
     }
 }
