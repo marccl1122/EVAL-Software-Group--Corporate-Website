@@ -124,4 +124,4 @@ We would like to thank the following people and organizations for their contribu
 
 ## Contact
 
-If you have any questions or concerns about this project, please don't hesitate to contact us. You can reach us at [info@evalsoftwaregroup.com](mailto:evalsoftware@gmail.com) or through our website's contact form.
+If you have any questions or concerns about this project, please don't hesitate to contact us. You can reach us at [evalsoftwaregroup@gmail.com](mailto:evalsoftware@gmail.com) or through our website's contact form.
